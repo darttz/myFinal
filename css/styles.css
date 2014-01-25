@@ -2,7 +2,12 @@
 html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{border:0;font-size:100%;font:inherit;vertical-align:baseline;margin:0;padding:0}
 article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}table{border-collapse:collapse;border-spacing:0}
 /*CSS Reset - End */
-
+body {
+	background:#0d0d0d;
+}
+.shadow {
+	box-shadow:inset 0 1px 0 0 rgba(0,0,0,0.05), inset 0px 2px 3px 0px rgba(0,0,0,0.1);
+}
 /* ============= TYPOGRAPHY:START ============== */
 /* === WEIGHT VALUES: START === 
 Futura -- Light-300, Book-400, Bold-700
@@ -12,15 +17,29 @@ h1, h2, h3, h4, h5, h6 {
 	font-family:"futura-pt", Helvetica, Arial, sans-serif;
 	margin:0;
 }
-p {font:normal 16px/22px Helvetica, Arial, sans-serif;}
+h1 {font-size:40px;}
+h2 {font-size:30px;}
+h3 {font-size:20px;}
+h4 {font-size:15px;}
+h5 {font-size:10px;}
+p {font:normal 16px/22px Helvetica, Arial, sans-serif; padding:10px;}
 .hero {
 	font-family:"futura-pt", Helvetica, Arial, sans-serif;
 }
+/* font awesome cdn - extra sizes */
+.fa-6x {font-size:6em;}
+.fa-7x {font-size:7em;}
+.fa-8x {font-size:8em;}
+.fa-9x {font-size:9em;}
+.fa-10x {font-size:10em;}
+
 /* ============= TYPOGRAPHY:END ================ */
 /* ------------- WRAPPER:START ------------------ */
 .wrapper {
-	margin:0 auto;
-	border:1px solid #ccc;
+	margin:0;
+	padding:0;
+	width:100%;
+	background:#fff;
 }
 /* ------------- WRAPPER:END -------------------- */
 /* ------------- HEADER:START ------------------ */
@@ -37,7 +56,7 @@ header {
 	float:left;
 }
 /* ------------- HEADER:END -------------------- */
-/* *********************** NAV AREA: START ***************** */
+/* ------------- NAV AREA: START ------------------ */
 nav {
 	padding:0; 
 	margin:0;
@@ -72,17 +91,20 @@ nav a:hover {
 }
 
 
-/* *********************** NAV AREA: END ******************/
-/* --------------- HERO:START ------------------ */
+/* ------------- NAV AREA: END ------------------ */
+/* ------------- HERO:START ------------------ */
+.heroWrap {
+	background:url(../images/hdr_wood.jpg) repeat-x;
+	width:100%;
+}
 .hero {
 	height:342px;
-	background:url(../images/hdr_wood.jpg) repeat-x;
 	margin-top:59px;
 }
 .heroTextArea {
 	text-align: left;
 	padding:20px;
-	margin:40px 0 0 0;
+	margin:0;
 	background:url(../images/hero_text_bgimg.png);
 }
 .heroTextArea h1 {
@@ -100,10 +122,60 @@ nav a:hover {
 .imac {
 	vertical-align: bottom;
 	text-align:right;
-	margin:10px 32px 0 0;
+	margin:26px 0 0 0;
 }
-/* --------------- HERO:END -------------------- */
+/* ------------- HERO:END ------------------ */
+/* ------------- CONTENT:START ------------- */
+.contentSection {
+	padding:20px 0;
+}
+.contentSection h1 {
+	padding-bottom:10px;
+}
+.contentSection p {
+	width:80%;
+}
+.contentSection img {
+	padding:20px 0;
+}
 
+/* ------------- CONTENT:END --------------- */
+/* ------------- FOOTER:START -------------- */
+.footerWrap {
+	background:#000;
+}
+footer {
+	text-align: center;
+	min-height: 200px;
+}
+.copyright {
+	color:#ff5a00;
+	font:normal 14px/22px "futura-pt", Helvetica, Arial, sans-serif;
+	padding:20px 0;
+}
+footer ul {
+	list-style:none;
+	text-align: left;
+	margin:0 50px;
+}
+footer ul li {
+	padding: 4px 10px;
+	display:inline;
+}
+footer ul li a:link, footer ul li a:visited {
+	color:#eee;
+	text-decoration: none;
+}
+footer ul li a:hover, footer ul li a:active {
+	color:#ff5a00;
+}
+footer h2 {
+	text-align:left;
+	color:#ff5a00;
+	padding:0 0 10px 40px;
+}
+
+/* ------------- FOOTER:END ------------------ */
 
 
 
