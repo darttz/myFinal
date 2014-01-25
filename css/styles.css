@@ -1,0 +1,57 @@
+/* CSS Reset - Start 
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{border:0;font-size:100%;font:inherit;vertical-align:baseline;margin:0;padding:0}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}table{border-collapse:collapse;border-spacing:0}
+CSS Reset - End */
+
+/* ============= TYPOGRAPHY:START ============== */
+/* === WEIGHT VALUES: START === 
+Futura -- Light-300, Book-400, Bold-700
+class to use: .tk-futura-pt
+====== WEIGHT VALUES: END ===== */
+h1, h2, h3, h4, h5, h6 {
+	font-family:"futura-pt", Helvetica, Arial, sans-serif;
+}
+/* ============= TYPOGRAPHY:END ================ */
+/* ------------- WRAPPER:START ------------------ */
+.wrapper {
+	margin:0 auto;
+}
+/* ------------- WRAPPER:END -------------------- */
+/* ------------- HEADER:START ------------------ */
+header {
+	height:60px;
+	background:#000;
+}
+.logo {
+	margin:10px 0 0 20px;
+}
+/* ------------- HEADER:END -------------------- */
+/* --------------- HERO:START ------------------ */
+.hero {
+	height:342px;
+	background:url(../images/hdr_wood.jpg) repeat-x;
+}
+.heroTextArea {
+	text-align: left;
+	padding:0;
+	margin:0;
+	
+}
+.heroTextArea h1 {
+	background:url(../images/hero_text_bgimg.png);
+	text-transform: uppercase;
+	font-size:80px;
+	color:#fff;
+	font-weight: 400;
+}
+.heroTextArea h3 {
+	font-size:50px;
+	color:#fff;
+	font-weight: 300;
+}
+.imac {
+	vertical-align: bottom;
+	text-align:right;
+	margin:10px 32px 0 0;
+}
+/* --------------- HERO:END -------------------- */
