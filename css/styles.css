@@ -1,7 +1,7 @@
-/* CSS Reset - Start 
+/*CSS Reset - Start */
 html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{border:0;font-size:100%;font:inherit;vertical-align:baseline;margin:0;padding:0}
 article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}table{border-collapse:collapse;border-spacing:0}
-CSS Reset - End */
+/*CSS Reset - End */
 
 /* ============= TYPOGRAPHY:START ============== */
 /* === WEIGHT VALUES: START === 
@@ -10,35 +10,82 @@ class to use: .tk-futura-pt
 ====== WEIGHT VALUES: END ===== */
 h1, h2, h3, h4, h5, h6 {
 	font-family:"futura-pt", Helvetica, Arial, sans-serif;
+	margin:0;
+}
+p {font:normal 16px/22px Helvetica, Arial, sans-serif;}
+.hero {
+	font-family:"futura-pt", Helvetica, Arial, sans-serif;
 }
 /* ============= TYPOGRAPHY:END ================ */
 /* ------------- WRAPPER:START ------------------ */
 .wrapper {
 	margin:0 auto;
+	border:1px solid #ccc;
 }
 /* ------------- WRAPPER:END -------------------- */
 /* ------------- HEADER:START ------------------ */
 header {
 	height:60px;
 	background:#000;
+	position:fixed;
+	left:0;
+	top:0;
+	width:100%;
 }
 .logo {
 	margin:10px 0 0 20px;
+	float:left;
 }
 /* ------------- HEADER:END -------------------- */
+/* *********************** NAV AREA: START ***************** */
+nav {
+	padding:0; 
+	margin:0;
+	font-family: "futura-pt", Helvetica, Arial, sans-serif;
+}
+nav ul {
+	list-style: none;
+	margin-left: auto;
+	margin-right:auto;
+	padding:0;
+	text-align: center;
+	width: 630px;
+}
+nav li {
+	display:inline;
+	float:left;
+	padding:0 10px;
+}
+nav a:link {
+	color:#fff; 
+	display: block;
+	height:20px;
+	margin:10px 0 0 0;
+	padding:10px 20px;
+	text-decoration: none;
+}
+nav a:visited, nav a:active {color:#eee;}
+nav a:hover {
+	color:#ccc; 
+	background-color:#333;
+	border-radius: 5px;
+}
+
+
+/* *********************** NAV AREA: END ******************/
 /* --------------- HERO:START ------------------ */
 .hero {
 	height:342px;
 	background:url(../images/hdr_wood.jpg) repeat-x;
+	margin-top:59px;
 }
 .heroTextArea {
 	text-align: left;
-	padding:0;
-	margin:0;
-	
+	padding:20px;
+	margin:40px 0 0 0;
+	background:url(../images/hero_text_bgimg.png);
 }
 .heroTextArea h1 {
-	background:url(../images/hero_text_bgimg.png);
 	text-transform: uppercase;
 	font-size:80px;
 	color:#fff;
@@ -48,6 +95,7 @@ header {
 	font-size:50px;
 	color:#fff;
 	font-weight: 300;
+	padding-left:44px;
 }
 .imac {
 	vertical-align: bottom;
@@ -55,3 +103,7 @@ header {
 	margin:10px 32px 0 0;
 }
 /* --------------- HERO:END -------------------- */
+
+
+
+
